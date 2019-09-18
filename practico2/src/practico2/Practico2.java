@@ -39,7 +39,7 @@ public class Practico2 {
 		System.out.println("" + num/mcd + ((den/mcd > 1) ? "/" + den/mcd : ""));
 	}
 	
-	private static boolean esCapicua(int num) {
+	private static boolean esCapicua(int num) { //Ej6
 		String str = "" + num;
 		boolean esCapicua = false;
 		int i = 0;
@@ -50,5 +50,9 @@ public class Practico2 {
 		}
 		
 		return esCapicua;
+	}
+	
+	private static int maxVector(int[] v, int desde, int hasta) {
+		
 	}
 }
