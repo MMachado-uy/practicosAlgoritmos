@@ -7,6 +7,7 @@ public class Practico4 {
 		System.out.println(potencia(85,0));
 		System.out.println(potencia(2,-3));
 		System.out.println(potencia(2,3));
+		listar(10);
 	}
 	
 	private static int factorial(int n) {
@@ -24,6 +25,13 @@ public class Practico4 {
 			return 1 / potencia(base, -exponente);
 		} else {
 			return base * potencia(base, exponente -1);
+		}
+	}
+
+	private static void listar(int n) {
+		if (n > 0) {
+			System.out.println(n);
+			listar(n-1);
 		}
 	}
 }
