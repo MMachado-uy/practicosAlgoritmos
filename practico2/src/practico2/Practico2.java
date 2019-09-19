@@ -52,7 +52,7 @@ public class Practico2 {
 		return esCapicua;
 	}
 	
-	private static int maxVector(int[] v, int desde, int hasta) {
-		
-	}
+//	private static int maxVector(int[] v, int desde, int hasta) {
+//		
+//	}
 }
