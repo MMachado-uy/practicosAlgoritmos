@@ -8,6 +8,8 @@ public class Practico4 {
 		System.out.println(potencia(2,-3));
 		System.out.println(potencia(2,3));
 		listar(10);
+		System.out.println("===========");
+		System.out.println(fibonacci(48));
 	}
 	
 	private static int factorial(int n) {
@@ -17,7 +19,7 @@ public class Practico4 {
 			return n * factorial(n-1);
 		}
 	}
-	
+
 	private static double potencia(int base, int exponente) {
 		if (exponente == 0) {
 			return 1;
@@ -32,6 +34,14 @@ public class Practico4 {
 		if (n > 0) {
 			System.out.println(n);
 			listar(n-1);
+		}
+	}
+
+	private static int fibonacci(int n) {
+		if (n <= 1) {
+			return n;
+		} else {
+			return fibonacci(n-2) + fibonacci(n-1);
 		}
 	}
 }
